@@ -26,7 +26,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     {
         $this->mergeConfigFrom(
             self::CONFIG_PATH,
-            'user-activity'
+            'activity'
         );
 
         $this->commands([UserActivityInstall::class, UserActivityDelete::class]);
